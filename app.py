@@ -12,7 +12,7 @@ model = joblib.load("model.pkl")
 def home():
     return render_template("index.html")
 
-@app.route("/",methods=['GET','POST'])
+@app.route("/",methods=['POST'])
 def prediction():
     if request.method == 'POST':
         Gender = request.form.get('gender')
