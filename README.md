@@ -33,7 +33,7 @@ This is a web application built to predict whether a home loan application will 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/abhi24112/Loan-Approval-Prediction-.git
+   git clone https://github.com/terrematte/loan-approval-ml.git
    ```
 2. Create a virtual environment and activate it:
    ```bash
