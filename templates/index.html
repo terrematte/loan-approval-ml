@@ -30,6 +30,118 @@
           </nav>
         </div>
     </header>
+    <form class="form-horizontal" action="/" method="POST">
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-1 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white" id="form">Loan Prediction Form</h1>
+            </div>
+             <!-- Form Row (Two fields per row) -->
+            <div class="flex flex-wrap mb-4 max-w-lg mx-auto px-8">
+                <!-- Gender Field -->
+                <div class="w-1/2 px-2 mb-4">
+                    <label for="gender" class="leading-7 text-sm text-gray-400">Gender</label>
+                    <select id="gender" name="gender"class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+						<option value="" selected disabled hidden>Choose here</option>
+						<option value="1">Male</option>
+						<option value="0">Female</option>
+                    </select>
+                </div>
+    
+                <!-- Married Field -->
+                <div class="w-1/2 px-2 mb-4">
+                    <label for="married" class="leading-7 text-sm text-gray-400">Marrital Status</label>
+                    <select id="married" name="married" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+						<option value="" selected disabled hidden>Choose here</option>
+						<option value="1">Married</option>
+						<option value="0">Single</option>
+                    </select>
+                </div>
+    
+                <!-- Field 1 -->
+                <div class="w-1/2 px-2 mb-4">
+                    <label for="education" class="leading-7 text-sm text-gray-400">Education</label>
+                    <select id="education" name="education" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+						<option value="" selected disabled hidden>Choose here</option>
+						<option value="1">Educated</option>
+						<option value="0">No formal education</option>
+                    </select>
+                </div>
+    
+                <!-- Field 2 -->
+                <div class="w-1/2 px-2 mb-4">
+                    <label for="employed" class="leading-7 text-sm text-gray-400">Self Employed</label>
+                    <select id="employed" name="employed" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+						<option value="" selected disabled hidden>Choose here</option>
+						<option value="1">Yes</option>
+						<option value="0">No</option>
+                    </select>
+                </div>
+                <!-- Field  -->
+                <div class="w-1/2 px-2 mb-4">
+                  <label for="app_income" class="leading-7 text-sm text-gray-400">Applicant Income</label>
+                  <input type="number" id="app_income" name="app_income" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <!-- Field  -->
+                <div class="w-1/2 px-2 mb-4">
+                  <label for="self_co_income" class="leading-7 text-sm text-gray-400">Self Coapplicant Income</label>
+                  <input type="number" id="self_co_income" name="self_co_income" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <!-- Field  -->
+                <div class="w-1/2 px-2 mb-4">
+                  <label for="loan_amount" class="leading-7 text-sm text-gray-400">Loan Amount</label>
+                  <input type="number" id="loan_amount" name="loan_amount" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <!-- Field  -->
+                <div class="w-1/2 px-2 mb-4">
+                  <label for="loan_term" class="leading-7 text-sm text-gray-400">Loan Amount Term</label>
+                  <input type="number" id="loan_term" name="loan_term" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <!-- Field  -->
+                <div class="w-1/2 px-2 mb-4">
+                  <label for="credit_history" class="leading-7 text-sm text-gray-400">Credit History</label>
+                  <input type="number" id="credit_history" name="credit_history" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <!-- Field  -->
+                <div class="w-1/2 px-2 mb-4">
+                  <label for="property_area" class="leading-7 text-sm text-gray-400">Property Area</label>
+                  <input type="number" id="property_area" name="property_area" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="w-full px-2 py-1">
+                    <button type="submit" class="w-full text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                </div>
+            </div>
+        </div>
+      </section>
+    </form>
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container mx-auto flex items-center justify-center flex-col">
+        <!-- <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Predicted Result</h1>
+          <p class="leading-relaxed mb-8 sm:text-4xl text-3xl title-font text-indigo-500">{{pred}}</p>
+        </div> -->
+        <div class="mt-8 mb-16 text-center">
+          <h2 class="text-xl sm:text-4xl text-3xl text-white">Your predicted result is:</h2>
+          <p class="text-lg sm:text-3xl text-2xl text-yellow-300">{{pred}}</p>
+        </div>
+      </div>
+     <p class="text-indigo-500 sm:text-3xl text-2xl" >Parameters:</p><br>
+     <p class="mx-auto leading-relaxed text-base" id="parameters">Fill all your credentials carefully for better results.
+     <br>
+                  1.Gender (male=1,female=0)<br>
+                  2.Marrital Status (married=1,single=0)<br>
+                  3.Education (educated=1,uneducated=0)<br>
+                  4.Self Employed (yes=1, no=0)<br>
+                  5.Applicant Income (example=2342 --monthly--)<br>
+                  6.Self Coapplicant Income(example = 0.0)<br>
+                  7.Loan Amount (example = 23423.23)<br>
+                  8.Loan Amount Term (example = 360 --days--)<br>
+                  9.Credit History (example=1.0)<br>
+                  10.Property Area (example = 2 --sq/feet--)
+       </p>
+    </section>
     <section class="text-gray-400 bg-gray-900 body-font" id="home">
         <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
@@ -48,101 +160,9 @@
             </div>
           </div>
         </div>
-    </section>
-    <form class="form-horizontal" action="/" method="POST">
-      <section class="text-gray-400 bg-gray-900 body-font">
-        <div class="container px-5 py-20 mx-auto">
-            <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white" id="form">Loan Prediction Form</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="parameters">Fill all your credentials carefully for better results.
-                  <br><p class="text-indigo-500 sm:text-3xl text-2xl" >Parameters:</p><br>
-                  1.Gender (male=1,femail=0)<br>
-                  2.Marrital Status (marrid=1,unmarrid=0)<br>
-                  3.Education (educated=1,uneducated=0)<br>
-                  4.Self Employed (yes=1, no=0)<br>
-                  5.Applicant Income (example=2342 --monthly--)<br>
-                  6.Self Coapplicant Income(example = 0.0)<br>
-                  7.Loan Amount (example = 23423.23)<br>
-                  8.Loan Amount Term (example = 360 --days--)<br>
-                  9.Credit History (example=1.0)<br>
-                  10.Property Area (example = 2 --sq/feet--)
-                </p>
-            </div>
+    </section>    
     
-            <!-- Form Row (Two fields per row) -->
-            <div class="flex flex-wrap mb-4 max-w-lg mx-auto px-8">
-                <!-- Full Name Field -->
-                <div class="w-1/2 px-2 mb-4">
-                    <label for="gender" class="leading-7 text-sm text-gray-400">Gender</label>
-                    <input type="text" id="gender" name="gender" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
     
-                <!-- Email Field -->
-                <div class="w-1/2 px-2 mb-4">
-                    <label for="married" class="leading-7 text-sm text-gray-400">Marrital Status</label>
-                    <input type="text" id="married" name="married" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-    
-                <!-- Field 1 -->
-                <div class="w-1/2 px-2 mb-4">
-                    <label for="education" class="leading-7 text-sm text-gray-400">Education</label>
-                    <input type="text" id="education" name="education" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-    
-                <!-- Field 2 -->
-                <div class="w-1/2 px-2 mb-4">
-                    <label for="employed" class="leading-7 text-sm text-gray-400">Self Employed</label>
-                    <input type="text" id="employed" name="employed" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <!-- Field 2 -->
-                <div class="w-1/2 px-2 mb-4">
-                  <label for="app_income" class="leading-7 text-sm text-gray-400">Applicant Income</label>
-                  <input type="text" id="app_income" name="app_income" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <!-- Field 2 -->
-                <div class="w-1/2 px-2 mb-4">
-                  <label for="self_co_income" class="leading-7 text-sm text-gray-400">Self Coapplicant Income</label>
-                  <input type="text" id="self_co_income" name="self_co_income" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <!-- Field 2 -->
-                <div class="w-1/2 px-2 mb-4">
-                  <label for="loan_amount" class="leading-7 text-sm text-gray-400">Loan Amount</label>
-                  <input type="text" id="loan_amount" name="loan_amount" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <!-- Field 2 -->
-                <div class="w-1/2 px-2 mb-4">
-                  <label for="loan_term" class="leading-7 text-sm text-gray-400">Loan Amount Term</label>
-                  <input type="text" id="loan_term" name="loan_term" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <div class="w-1/2 px-2 mb-4">
-                  <label for="credit_history" class="leading-7 text-sm text-gray-400">Credit History</label>
-                  <input type="text" id="credit_history" name="credit_history" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <div class="w-1/2 px-2 mb-4">
-                  <label for="property_area" class="leading-7 text-sm text-gray-400">Property Area</label>
-                  <input type="text" id="property_area" name="property_area" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                
-                <!-- Submit Button -->
-                <div class="w-full px-2">
-                    <button type="submit" class="w-full text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
-                </div>
-            </div>
-        </div>
-      </section>
-    </form>
-    <section class="text-gray-400 bg-gray-900 body-font">
-      <div class="container mx-auto flex px-5 items-center justify-center flex-col">
-        <!-- <div class="text-center lg:w-2/3 w-full">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Predicted Result</h1>
-          <p class="leading-relaxed mb-8 sm:text-4xl text-3xl title-font text-indigo-500">{{pred}}</p>
-        </div> -->
-        <div class="mt-8 mb-16 text-center">
-          <h2 class="text-xl sm:text-4xl text-3xl text-white">Your predicted result is:</h2>
-          <p class="text-lg sm:text-3xl text-2xl text-yellow-300">{{pred}}</p>
-        </div>
-      </div>
-    </section>
     <footer class="flex flex-col space-y-10 justify-center text-gray-400 bg-gray-900 body-font">
       <div class="flex justify-center space-x-5">
           <a href="http://www.linkedin.com/in/abhishek9910" target="_blank" rel="noopener noreferrer">
