@@ -25,13 +25,8 @@ def prediction():
         Loan_Amount_Term = request.form.get('loan_term')   
         Credit_History = request.form.get('credit_history')   
         Property_Area = request.form.get('property_area')
-        final = [Gender,Married,Education,Self_Employed,ApplicantIncome,
-                 CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area]
-        # prediction = model.predict([final])
-        # if prediction[0] == 1:
-        #     return render_template("index.html",pred="----Your Loan is Approved----")
-        # else:
-        #     return render_template("index.html",pred="----Your Loan is Not Approved----")
+        final = [Gender, Married, Education, Self_Employed, ApplicantIncome, CoapplicantIncome, 
+                 LoanAmount, Loan_Amount_Term, Credit_History, Property_Area]
         
         # Check for empty values and handle them
         if not all([Gender, Married, Education, Self_Employed, ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, Property_Area]):
