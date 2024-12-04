@@ -52,7 +52,13 @@ def prediction():
         except ValueError:
             return render_template("index.html", pred="----Invalid input. Please enter valid numbers----")
 
-
+@app.route('/predict_api',methods=['POST'])
+def predict_api():
+    data = request.get_json(force=True)
+    data_unseen = pd.DataFrame([data])
+    prediction = model.predict([data_unseen])
+    output = prediction.Label[0]
+    return jsonify(output)
 
 url = "https://loan-approval-prediction-jc8r.onrender.com"  # Replace with your Render URL
 interval = 30  # Interval in seconds (30 seconds)
